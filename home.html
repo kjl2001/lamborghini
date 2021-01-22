@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                 <img src="images/lpnglogo.png" alt=""> 
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="home">HOME</a></li>
+                    <li><a href="category">CATEGORY</a></li>
+                    <li><a href="about">ABOUT US</a></li>
+                    <li><a href="contact">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <!-- <img src="/images/lpnglogo.png" alt="" class="lambo"> -->
+            <div id="circle">
+                <div class="feature one">
+                    <img src="/images/lp23.png" alt="">
+                <div><h1></h1><p></p></div></div>
+                <div class="feature two">
+                    <img src="/images/lp23.jpg" alt="">
+                    <div><h1></h1><p></p></div></div>
+                <div class="feature three">
+                    <img src="/images/lp23.jpg" alt="">
+                    <div><h1></h1><p></p></div></div>
+                <div class="feature four">
+                    <img src="/images/lp23.jpg" alt="">
+                    <div><h1></h1><p></p></div></div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="/images/arrow.png" alt="" id="upbtn">
+            
+            
+            <h3>Feature</h3>
+            <img src="/images/arrow.png" alt="" id="downbtn">
+            
+        </div>
+    </div>
+    <script>
+    var circle=document.getElementById("circle");
+    var upbtn=document.getElementById("upbtn");
+    var downbtn=document.getElementById("downbtn");
+    var rotatevalue =circle.style.transform;
+    var rotatesum;
+    upbtn.onclick= function()
+    {
+        rotatesum = rotatevalue + "rotate(-90deg)";
+        circle.style.transform = rotatesum;
+        rotatevalue = rotatesum;
+    }
+    downbtn.onclick= function()
+    {
+        rotatesum = rotatevalue + "rotate(90deg)";
+        circle.style.transform = rotatesum;
+        rotatevalue = rotatesum;
+    }
+    </script>
+</body>
+
+</html>

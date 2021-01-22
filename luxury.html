@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="luxury cars" />
+  <meta name="keywords" content="luxury cars,lamborgini,aventodor" />
+  <title>LUXURY CARS</title>
+  <link rel="stylesheet" href="luxury.css" />
+  <script src="luxury.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="images/lpnglogo.png" alt=""> 
+
+    <label class="logo1">LAMBORGINI models</label>
+    <ul>
+      
+      <li><a class="active" href="#">HOME</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#">service</a></li>
+      <li><a href="#">contact</a></li>
+      <li><a href="#">feedback</a></li>
+     <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">MODELS</a>
+        <div class="dropdown-content">
+          <a href="aventador.html">aventador</a>
+          <a href="asterion.html">asterion</a>
+          <a href="urus.html">urus</a>
+          <a href="sian.html">sian</a>
+          <a href="estoque.html">estoque</a>
+          <a href="terzo.html">terzo</a>
+        </div>
+      </li>       <li><a href="#">about us</a></li>
+    </ul>
+    <label id="icon">
+      <i class="fa-fa"></i>
+    </label></div>
+  </nav>
+  
+<div>
+  <img src="images/l17.webp" alt="LAMBORGINI"/>
+  <button class="button">models</button></div>
+  <h1>LUXURY CARS</h1>
+ 
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corporis hic
+    dolorem magni,<strong>this is strong</strong> odit earum ut repellendus
+    nesciunt dolorum voluptates aliquid maiores consequuntur cupiditate.
+    Maxime, voluptate beatae?<em>this is emphasis </em> Dolore, alias
+    explicabo.
+  </p>
+  <!-- <a href="http://facebook.com" target="_blank">facebook</a><br />
+  <a href="http://twitter.com" target="_blank">twitter</a><br />
+  <a href="http://linkedin.com" target="_blank">linkedin</a><br />
+  <a href="http://github.com" target="_blank">github</a><br />
+  <a href="/harry.html" target="_blank">harry</a><br />
+  <a href="/aventador.html" target="_blank">aventador</a><br />
+  <a href="/estoque.html" target="_blank">estoque</a><br />
+  <a href="/huracan.html" target="_blank">huracan</a><br />
+  <a href="/sian.html" target="_blank">sian</a><br />
+  <a href="/terzo.html" target="_blank">terzo </a><br />
+  <a href="/urus.html" target="_blank">urus</a><br /> -->
+  <hr />
+  <hr /><div class="dec" id="desc">
+   <img  src="/images/l12.jpg" alt="random images unsplash source" />
+  <img src="/images/l3.jpg" alt=""></div>
+  <h2>Slide in Overlay from the Right</h2>
+
+<div class="container">
+  <img src="/images/l14.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text"><img src="/images/l15.jpg" alt=""></div>
+  </div>
+</div>
+<h2>Image Modal</h2>
+<p>In this example, we use CSS to create a modal (dialog box) that is hidden by default.</p>
+<p>We use JavaScript to trigger the modal and to display the current image inside the modal when it is clicked on.
+   Also note that we use the value from the image's "alt" attribute as an image caption text inside the modal.</p>
+<p>Don't worry if you do not understand the code right away. When you are done with CSS, go to our JavaScript Tutorial to learn more.</p>
+
+<img id="myImg" src="/images/lpng1.png" alt="Northern Lights, Norway" >
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display ="block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+  <hr />
+  <hr />
+  <!-- <ul type="disc">
+    <li>this is item of unordered list</li>
+    <li>this is item of unordered list</li>
+    <ul type="circle">
+      <li>another one</li>
+      <li>another two</li>
+    </ul>
+    <li>this is item of unordered list</li>
+  </ul>
+  <ol type="1">
+    <li>this is oredered list</li>
+    <li>this is oredered list</li>
+    <li>this is oredered list</li>
+  </ol>
+  table--> 
+  <!-- <h3>html table</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>head 1</th>
+        <th>head 2</th>
+        <th>head 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>hname</td>
+        <td>hid</td>
+        <td>hadd</td>
+      </tr>
+      <tr>
+        <td>hname1</td>
+        <td>hid1</td>
+        <td>hadd1</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>form</h2>
+  <form action="backend.php">
+    <div><label for="name">Name:</label><input type="text" id="name" /></div>
+    <br />
+
+    <div><label for="role">Role:</label><input type="text" name="myrole" id="role" /></div>
+    <br />
+    <div><label for="email">Email:</label><input type="email" name="" id="email" /></div>
+    <br />
+    <div><label for="password">Password:</label><input type="password" name="" id="password" /></div>
+    <br />
+    <div><label for="time">Time:</label><input type="time" name="" id="time" /></div>
+    <br />
+    <div><label for="dt">datetime:</label><input type="datetime" name="" id="dt" /></div>
+    <br />
+    <div><label for="dtl">datetime-local:</label><input type="datetime-local" name="" id="dtl" /></div>
+    <br />
+
+    <div><label for="d">Date:</label><input type="date" name="" id="d" /></div>
+
+    <div><label for="price">Price:</label><input type="number" name="" id="price" /></div><br />
+
+    <div><label for="gender">Gender:</label>Male:<input type="radio" name="mygender" id="gender" />Female:<input
+        type="radio" name="mygender" id="gender" />Other:<input type="radio" name="mygender" id="gender" /></div>
+
+    <div><label for="way">Write about yourself:</label> <br /><textarea name="" id="way" cols="30" rows="10"></textarea>
+    </div><br />
+
+    <div><label for="car">Car</label>
+      <select name="car" id="car">
+        <option value="aventador" selected>aventador</option>
+        <option value="asterion">asterion</option>
+        <option value="estoque">estoque</option>
+        <option value="huracane">huracan</option>
+        <option value="sian">sian</option>
+        <option value="terzo">terzo</option>
+        <option value="urus">urus</option>
+      </select>
+    </div><br />
+    0
+    <div><input type="submit" value="submit" />
+      <label for="name"></label>
+      <input type="reset" value="reset" />
+    </div>
+    <label for="name">are you eligible:</label>
+    <div><input type="checkbox" name="" id="" checked /></div>
+    <br />
+  </form>
+  -->
+  <!-- <div style="border: solid darkgreen">
+    <strong style="border: 2px solid crimson">this is para </strong>
+    <a>this also para</a>
+    <em style="border: solid darkgreen">love</em>
+    <li style="border: solid darkgreen">this is</li>
+    <ul style="border: solid darkgreen">love></ul>
+    <span style="border: 2px solid darkblue">this is a para</span>
+    <span style="border: 2px solid darkblue">this is also</span>
+  </div>
+  <h3>ids and classes</h3> -->
+  <!--class::- properties to an element-->
+  <!-- <div id="mainbox" class="redbg blackborder">this is mainbox</div>
+  <span class="redbg"></span> --> 
+  <!-- ctrl+/  comment -->
+  <!-- emmet -->
+  <!-- . is for class and # is for id -->
+  <!-- creating multipe elements using emmet -->
+  <!-- span.class.clas1.class2 +<tab> -->
+  <!-- span.class.class1.class2*4 -->
+  <!--&nbsp; for spaces between sentence  -->
+  <!-- &lt lower than and &gt greater than -->
+  <!-- &pound; currency and &copy; copywrite symbol -->
+  <!-- &#8203 for empty character ;;&frac14 for fraction 1/4 ;;&rAarr for right hand arrow -->
+  <!-- html semantic tags: give meaning to word -->
+  <!-- <h3>semantic tags</h3> --> 
+  <details>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
+    aperiam repudiandae, laboriosam unde fuga dolor nisi, culpa possimus nemo
+    voluptates, aspernatur distinctio tenetur quaerat accusantium! Dolores
+    aliquam cum omnis? Sapiente et nesciunt autem pariatur vero, quibusdam
+    placeat laudantium officiis repellendus!
+  </details>
+</body>
+
+</html>
